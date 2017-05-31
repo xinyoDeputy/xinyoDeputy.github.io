@@ -1,0 +1,33 @@
+body{
+	margin:0;
+}
+div{
+	width: 1601px;
+	margin:0 auto;
+	text-align: center;
+}
+.shaggy1{
+	position: relative;
+}
+.shaggy2{
+	position: absolute;
+	right: 150px;
+	top: 260px;
+	opacity: 0;
+}
+.shaggy2.show{
+	opacity: 1;
+	-webkit-animation-name: shake; /* Chrome, Safari, Opera */
+	-webkit-animation-duration: 2s; /* Chrome, Safari, Opera */
+	-webkit-animation-iteration-count: infinite; /* Chrome, Safari, Opera */
+	animation-name: shake;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+@keyframes shake {
+    0%   {transform: rotate(20deg);}
+    25%  {transform: rotate(20deg) scale(1.2);}
+    50%  {transform: rotate(0deg);}
+    75%  {transform: rotate(-20deg);}
+    100% {transform: rotate(0deg);}
+}
